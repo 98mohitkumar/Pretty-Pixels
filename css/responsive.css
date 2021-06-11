@@ -52,8 +52,10 @@
   .GridWallsSmartphone {
     grid-template-columns: repeat(2, 1fr); }
   .footer {
-    flex-direction: column; }
+    flex-direction: column;
+    padding: 1.5rem 3rem !important; }
   .about {
-    width: 80%; }
+    width: 80%;
+    min-height: calc(100vh - 325px); }
     .about p {
       font-size: 1.15rem !important; } }
