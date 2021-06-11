@@ -1,0 +1,333 @@
+@import url("https://api.fontshare.com/css?f[]=general-sans@500&display=swap");
+@import url("https://fonts.cdnfonts.com/css/gilroy-bold");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap");
+html {
+  -webkit-font-smoothing: antialiased; }
+
+::-webkit-scrollbar {
+  width: 8px; }
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0); }
+
+::-webkit-scrollbar-thumb {
+  background: #909090;
+  border-radius: 8px; }
+
+::-webkit-scrollbar-thumb:hover {
+  background: #606060; }
+
+.navbar ul li a {
+  position: relative;
+  font-family: "General Sans", sans-serif; }
+  .navbar ul li a::before {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 1.5px;
+    width: 100%;
+    transform: scaleX(0);
+    background-color: black;
+    left: 0;
+    bottom: 0px;
+    transform-origin: center;
+    transition: 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.28); }
+  .navbar ul li a:hover::before {
+    transform: scaleX(1); }
+
+.container {
+  padding: 0rem !important;
+  margin: auto !important; }
+
+.ShowcaseHeading {
+  font-family: "Gilroy-Bold";
+  text-shadow: 2px 2px 1rem #272727;
+  letter-spacing: 0.1rem;
+  z-index: 5; }
+
+.categories {
+  font-family: "Gilroy-Bold"; }
+
+.dark {
+  position: absolute;
+  background: rgba(36, 36, 36, 0.6);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.4s cubic-bezier(0.46, 0.03, 0.52, 0.96);
+  opacity: 0;
+  z-index: 7; }
+
+.dark-cat {
+  position: absolute;
+  background: rgba(36, 36, 36, 0.4);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 7; }
+
+.box-headings {
+  position: absolute;
+  z-index: 10;
+  font-family: "Gilroy-Medium";
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  text-shadow: 2px 2px 1rem #272727;
+  transition: opacity 0.4s cubic-bezier(0.46, 0.03, 0.52, 0.96); }
+
+.box-headings-cat {
+  position: absolute;
+  z-index: 10;
+  font-family: "Gilroy-Medium";
+  width: 100%;
+  height: 100%;
+  text-shadow: 2px 2px 1rem #272727; }
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem; }
+
+.zoom {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center center;
+  z-index: 20; }
+
+.MainSection {
+  position: relative;
+  background: url("../images/Showcase.jpg") no-repeat center center/cover;
+  width: 95%;
+  height: 500px; }
+
+.overlay {
+  background: rgba(66, 66, 66, 0.6);
+  z-index: 4;
+  width: 100%;
+  height: 100%;
+  mix-blend-mode: hard-light; }
+
+.DeviceType {
+  font-family: "Gilroy-Bold"; }
+
+.BoxesWrap {
+  width: 95%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  grid-template-rows: auto;
+  gap: 1.5rem; }
+  .BoxesWrap .overlay {
+    background: transparent;
+    mix-blend-mode: normal; }
+
+.Box-1 {
+  background: url("https://images.unsplash.com/photo-1527443154391-507e9dc6c5cc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1950&q=80") no-repeat center center/cover;
+  height: 300px;
+  width: 100%;
+  z-index: 6;
+  transition: transform 0.4s cubic-bezier(0.46, 0.03, 0.52, 0.96); }
+
+.Box-2 {
+  background: url("https://images.unsplash.com/photo-1585790050230-5dd28404ccb9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2089&q=80") no-repeat center center/cover;
+  height: 300px;
+  width: 100%;
+  z-index: 6;
+  transition: transform 0.4s cubic-bezier(0.46, 0.03, 0.52, 0.96); }
+
+.Box-3 {
+  background: url("https://images.unsplash.com/photo-1512054502232-10a0a035d672?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2000&q=80") no-repeat center center/cover;
+  height: 300px;
+  width: 100%;
+  z-index: 6;
+  transition: transform 0.4s cubic-bezier(0.46, 0.03, 0.52, 0.96); }
+
+.overflow {
+  overflow: hidden; }
+  .overflow:hover .Box-1,
+  .overflow:hover .Box-2,
+  .overflow:hover .Box-3 {
+    transform: scale(1.2); }
+  .overflow:hover .dark {
+    opacity: 1; }
+  .overflow:hover a {
+    opacity: 1; }
+
+.footer {
+  height: 100px;
+  border-color: rgba(66, 66, 66, 0.4); }
+  .footer h2 {
+    font-family: "Gilroy-Medium"; }
+  .footer .social-links a {
+    font-size: 2rem;
+    color: black; }
+
+.DesktopSection {
+  position: relative;
+  background: url("https://source.unsplash.com/1920x1080/daily?Background,landscape") no-repeat center center/cover;
+  width: 95%;
+  height: 500px; }
+
+.TabletSection {
+  position: relative;
+  background: url("https://source.unsplash.com/1920x1080/daily?Background,aerial,forest") no-repeat center center/cover;
+  width: 95%;
+  height: 500px; }
+
+.SmartphoneSection {
+  position: relative;
+  background: url("https://source.unsplash.com/1920x1080/daily?Background,nature,iceberg") no-repeat center center/cover;
+  width: 95%;
+  height: 500px; }
+
+.CategoriesSection {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  grid-template-rows: auto;
+  gap: 2rem;
+  width: 95%; }
+  .CategoriesSection .nature {
+    background: url("https://source.unsplash.com/1280x720/daily?nature") no-repeat center center/cover;
+    height: 300px; }
+  .CategoriesSection .water {
+    background: url("https://source.unsplash.com/1280x720/daily?sea") no-repeat center center/cover;
+    height: 300px; }
+  .CategoriesSection .architecture {
+    background: url("https://source.unsplash.com/1280x720/daily?buildings") no-repeat center center/cover;
+    height: 300px; }
+  .CategoriesSection .minimalism {
+    background: url("https://source.unsplash.com/1280x720/daily?minimalism") no-repeat center center/cover;
+    height: 300px; }
+  .CategoriesSection .aerial {
+    background: url("https://source.unsplash.com/1280x720/daily?aerial") no-repeat center center/cover;
+    height: 300px; }
+  .CategoriesSection .mountain {
+    background: url("https://source.unsplash.com/1280x720/daily?mountains") no-repeat center center/cover;
+    height: 300px; }
+  .CategoriesSection .abstract {
+    background: url("https://source.unsplash.com/1280x720/daily?abstract") no-repeat center center/cover;
+    height: 300px; }
+  .CategoriesSection .forest {
+    background: url("https://source.unsplash.com/1280x720/daily?forest") no-repeat center center/cover;
+    height: 300px; }
+  .CategoriesSection .urban {
+    background: url("https://source.unsplash.com/1280x720/daily?urban") no-repeat center center/cover;
+    height: 300px; }
+  .CategoriesSection .cars {
+    background: url("https://source.unsplash.com/1280x720/daily?sports cars") no-repeat center center/cover;
+    height: 300px; }
+  .CategoriesSection .nightsky {
+    background: url("https://source.unsplash.com/1280x720/daily?milky way") no-repeat center center/cover;
+    height: 300px; }
+  .CategoriesSection .patterns {
+    background: url("https://source.unsplash.com/1280x720/daily?patterns") no-repeat center center/cover;
+    height: 300px; }
+
+.NatureSection {
+  position: relative;
+  background: url("https://source.unsplash.com/1920x1080/weekly?nature") no-repeat center center/cover;
+  width: 95%;
+  height: 500px; }
+
+.WaterSection {
+  position: relative;
+  background: url("https://source.unsplash.com/1920x1080/weekly?water") no-repeat center center/cover;
+  width: 95%;
+  height: 500px; }
+
+.ArchitectureSection {
+  position: relative;
+  background: url("https://source.unsplash.com/1920x1080/weekly?modern architecture") no-repeat center center/cover;
+  width: 95%;
+  height: 500px; }
+
+.MinimalismSection {
+  position: relative;
+  background: url("https://source.unsplash.com/1920x1080/weekly?minimalism") no-repeat center center/cover;
+  width: 95%;
+  height: 500px; }
+
+.AerialSection {
+  position: relative;
+  background: url("https://source.unsplash.com/1920x1080/weekly?Aerial,drone") no-repeat center center/cover;
+  width: 95%;
+  height: 500px; }
+
+.MountainSection {
+  position: relative;
+  background: url("https://source.unsplash.com/1920x1080/weekly?Mountains,backgorund") no-repeat center center/cover;
+  width: 95%;
+  height: 500px; }
+
+.AbstractSection {
+  position: relative;
+  background: url("https://source.unsplash.com/1920x1080/weekly?Abstract,backgorund") no-repeat center center/cover;
+  width: 95%;
+  height: 500px; }
+
+.ForestSection {
+  position: relative;
+  background: url("https://source.unsplash.com/1920x1080/weekly?Forest") no-repeat center center/cover;
+  width: 95%;
+  height: 500px; }
+
+.UrbanSection {
+  position: relative;
+  background: url("https://source.unsplash.com/1920x1080/weekly?Urban,background") no-repeat center center/cover;
+  width: 95%;
+  height: 500px; }
+
+.CarsSection {
+  position: relative;
+  background: url("https://source.unsplash.com/1920x1080/weekly?cars,background") no-repeat center center/cover;
+  width: 95%;
+  height: 500px; }
+
+.NightSkySection {
+  position: relative;
+  background: url("https://source.unsplash.com/1920x1080/weekly?milkyway") no-repeat center center/cover;
+  width: 95%;
+  height: 500px; }
+
+.PatternSection {
+  position: relative;
+  background: url("https://source.unsplash.com/1920x1080/weekly?pattern,lines") no-repeat center center/cover;
+  width: 95%;
+  height: 500px; }
+
+.GridWalls {
+  width: 95%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem; }
+
+.GridWallsSmartphone {
+  width: 95%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 2rem; }
+
+.GridWallsTablet {
+  width: 95%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 2rem; }
+
+.about {
+  width: 70%;
+  min-height: calc(100vh - 280px); }
+  .about .abouttitle {
+    font-family: "Gilroy-Bold"; }
+  .about .aboutpara {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500; }
+  .about .sources {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500; }
+    .about .sources .sourcetitle {
+      font-family: "Gilroy-Bold"; }
