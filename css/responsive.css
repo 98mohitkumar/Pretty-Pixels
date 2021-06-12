@@ -1,6 +1,8 @@
 @media only screen and (max-width: 1030px) {
   .navbar ul li a::before {
     display: none; }
+  .current {
+    border-bottom: 2px solid black; }
   .overflow:hover .Box-1,
   .overflow:hover .Box-2,
   .overflow:hover .Box-3 {
@@ -21,7 +23,7 @@
   .MountainSection,
   .NatureSection,
   .NightSkySection,
-  .PatterSection,
+  .PatternSection,
   .UrbanSection,
   .WaterSection {
     height: 45vw; }
