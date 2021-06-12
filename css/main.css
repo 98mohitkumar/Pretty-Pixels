@@ -159,7 +159,8 @@ html {
     opacity: 1; }
 
 .footer {
-  border-color: rgba(66, 66, 66, 0.4); }
+  border-color: rgba(66, 66, 66, 0.4);
+  padding: 1.5rem; }
   .footer h2 {
     font-family: "Gilroy-Medium"; }
   .footer .social-links a {
@@ -317,9 +318,14 @@ html {
   grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
   gap: 2rem; }
 
+.AboutWrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: calc(100vh - 130px); }
+
 .about {
-  width: 70%;
-  min-height: calc(100vh - 280px); }
+  width: 70%; }
   .about .abouttitle {
     font-family: "Gilroy-Bold"; }
   .about .aboutpara {
