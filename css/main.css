@@ -336,3 +336,26 @@ html {
     font-weight: 500; }
     .about .sources .sourcetitle {
       font-family: "Gilroy-Bold"; }
+
+.MainSection,
+.DesktopSection,
+.TabletSection,
+.SmartphoneSection,
+.AbstractSection,
+.AerialSection,
+.ArchitectureSection,
+.CarsSection,
+.ForestSection,
+.MinimalismSection,
+.MountainSection,
+.NatureSection,
+.NightSkySection,
+.PatternSection,
+.UrbanSection,
+.WaterSection,
+.BoxesWrap,
+.CategoriesSection,
+.GridWalls,
+.GridWallsTablet,
+.GridWallsSmartphone {
+  max-width: 1900px; }
