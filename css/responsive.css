@@ -54,8 +54,9 @@
   .GridWallsSmartphone {
     grid-template-columns: repeat(2, 1fr); }
   .footer {
-    flex-direction: column;
-    padding: 1.5rem 3rem !important; }
+    padding: 1.5rem 2rem !important; }
+  .footerAbout {
+    flex-direction: column; }
   .about {
     width: 80%; }
     .about p {
