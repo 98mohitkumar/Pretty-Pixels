@@ -28,8 +28,6 @@ const disableDarkMode = () => {
   dark.style.display = "none";
 };
 
-console.log(DarkModeCheck);
-
 if (DarkModeCheck === "enabled") {
   enableDarkMode();
 }
@@ -38,7 +36,6 @@ light.addEventListener("click", () => {
   DarkModeCheck = localStorage.getItem("DarkModeCheck");
 
   if (DarkModeCheck !== "enabled") {
-    console.log(DarkModeCheck);
     enableDarkMode();
   }
 });
@@ -47,7 +44,6 @@ dark.addEventListener("click", () => {
   DarkModeCheck = localStorage.getItem("DarkModeCheck");
 
   if (DarkModeCheck !== null) {
-    console.log(DarkModeCheck);
     disableDarkMode();
   }
 });
