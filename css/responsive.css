@@ -2,88 +2,89 @@
   .navbar ul li a::before {
     display: none;
   }
+
   .overflow:hover .Box-1,
-  .overflow:hover .Box-2,
-  .overflow:hover .Box-3 {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+.overflow:hover .Box-2,
+.overflow:hover .Box-3 {
+    transform: scale(1);
   }
+
   .dark,
-  .box-headings {
+.box-headings {
     opacity: 1;
   }
+
   .MainSection,
-  .DesktopSection,
-  .TabletSection,
-  .SmartphoneSection,
-  .AbstractSection,
-  .AerialSection,
-  .ArchitectureSection,
-  .CarsSection,
-  .ForestSection,
-  .MinimalismSection,
-  .MountainSection,
-  .NatureSection,
-  .NightSkySection,
-  .PatternSection,
-  .UrbanSection,
-  .WaterSection {
+.DesktopSection,
+.TabletSection,
+.SmartphoneSection,
+.AbstractSection,
+.AerialSection,
+.ArchitectureSection,
+.CarsSection,
+.ForestSection,
+.MinimalismSection,
+.MountainSection,
+.NatureSection,
+.NightSkySection,
+.PatternSection,
+.UrbanSection,
+.WaterSection {
     height: 45vw;
   }
+
   .CategoriesSection {
     gap: 1.5rem;
   }
+
   .GridWalls {
-    -ms-grid-columns: (minmax(340px, 1fr))[auto-fit];
-        grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
     gap: 1.5rem;
   }
+
   .GridWallsSmartphone {
-    -ms-grid-columns: (1fr)[3];
-        grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
   }
 }
-
 @media only screen and (max-width: 800px) {
   .BoxesWrap,
-  .GridWalls,
-  .GridWallsSmartphone,
-  .GridWallsTablet,
-  .CategoriesSection {
+.GridWalls,
+.GridWallsSmartphone,
+.GridWallsTablet,
+.CategoriesSection {
     gap: 1.2rem;
   }
 }
-
 @media only screen and (max-width: 600px) {
   .BoxesWrap,
-  .GridWalls,
-  .GridWallsSmartphone,
-  .GridWallsTablet,
-  .CategoriesSection {
+.GridWalls,
+.GridWallsSmartphone,
+.GridWallsTablet,
+.CategoriesSection {
     gap: 1rem;
   }
+
   .GridWallsSmartphone {
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
+
   .footer {
     padding: 1.5rem 2rem !important;
   }
+
   .footerAbout {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
+
   .about {
     width: 80%;
   }
   .about p {
     font-size: 1.15rem !important;
   }
+
   .AboutWrap a {
     padding-bottom: 0rem !important;
   }
-}
-/*# sourceMappingURL=responsive.css.map */
+}/*# sourceMappingURL=responsive.css.map */
