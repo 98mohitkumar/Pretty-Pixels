@@ -15,12 +15,14 @@
     <meta property="og:image:alt" content="Pretty Pixels">
     <meta property="og:site_name" content="Pretty Pixels">
 
+    <link rel="preload" href="js/main.js" as="script">
     <link rel="preload"
         href='https://cdn.rawgit.com/mfd/09b70eb47474836f25a21660282ce0fd/raw/e06a670afcb2b861ed2ac4a1ef752d062ef6b46b/Gilroy.css'
         as='style' />
     <link rel="preload" href='https://api.fontshare.com/css?f[]=general-sans@500&display=swap' as='style' />
     <link rel="'preload" href='https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap' as='style' />
 
+    <script src="https://kit.fontawesome.com/3a7346116e.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
@@ -99,12 +101,20 @@
 
     <!-- Footer -->
 
-    <footer class="footer mt-5 border-top border-2 d-flex justify-content-between align-items-center">
+    <footer class="footer px-5 mt-5 border-top border-2 d-flex justify-content-between align-items-center">
         <h2 class="fs-4 text-dark mb-0">
             All credits to Unsplash
         </h2>
-        <img class="lightMode" src="images/light.svg" alt="light">
-        <img class="darkMode" src="images/dark.svg" alt="dark">
+
+        <div class="social-links d-flex justify-content-center align-items-center">
+            <a href="https://github.com/98mohitkumar" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/98mohitkumar" target="_blank"><i class="fab fa-linkedin"></i></a>
+
+            <div class="theme-icon">
+                <img class="lightMode" src="images/light.svg" alt="light">
+                <img class="darkMode" src="images/dark.svg" alt="dark">
+            </div>
+        </div>
     </footer>
 
     <!-- Scripts -->
@@ -118,7 +128,6 @@
         crossorigin="anonymous"></script>
 
     <script src="js/main.js"></script>
-
 </body>
 
 </html>

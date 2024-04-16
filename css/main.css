@@ -228,11 +228,17 @@ nav {
 .footer {
   transition: 0.4s border-color ease-in-out;
   padding: 2rem;
+  gap: 20px;
 }
 
 .footer h2 {
   font-family: "Gilroy";
 }
+
+.footer .social-links {
+  gap: 32px;
+}
+
 
 .footer .social-links a {
   font-size: 2rem;
